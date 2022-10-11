@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="./panela.ico">
+    <title>Receitas</title>
+</head>
+<body onLoad="getJson()">
+    <header id="header">
+        <div class="pagina">pagina<select name="pagina" id="pagina" onchange="render()"><option value="1">1</option></select></div>
+        <div class="itensPorPagina">
+            itens por pagina<select value="10" name="qtdReceitas" id="qtdReceitas" onchange="render()">
+            <option value="10" id="10">10</option>
+            <option value="50" id="50">50</option>
+            <option value="200" id="200">200</option>
+            <option value="10000" id="todos">Todos</option>
+        </select></div>
+        <input type="text" id="nome" placeholder="nome" onchange="render()">
+        <input type="text" id="ingredientes" placeholder="ingredientes">
+        <button onClick="render()">Procurar</button>
+        <button id="btn-traduzido" onClick="translatedSearch()">Traduzido</button>
+    </header>
+    <div class="container" onLoad="handleMouseOutFoto()">  
+    <div id="root" class="root"><div class="carregando">Carregando...</div></div>
+    <div id="foto" class="foto">
+        <img class="img" src="./logo.png" alt="Logo">
+        <p>Temos diversas receitas disponíveis. Caso queira pesquisar por mais de um ingrediente de uma vez,
+             separe-os por vírgula. Como as receitas estão em ingles, caso queira pesquisar usando ingredientes em português,
+              use o botão de pesquisa traduzida.</p></div>
+    </div>
+
+    <script type = "text/javascript" src="index.js"></script>
+</body>
+</html

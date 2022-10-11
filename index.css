@@ -1,0 +1,122 @@
+.carregando{
+    position: absolute;
+    top: 30vh;
+    left: 20vw
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 -1vw 0 0;
+}
+
+#header{
+     width: 100%;
+     height: 15%;
+     background-color: rgb(216, 216, 216);
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.pagina{
+    display: flex;
+    flex-direction: column;
+}
+.pagina > select{
+    text-align: center;
+    width: fit-content;
+}
+
+.itensPorPagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.itensPorPagina > select {
+    text-align: center;
+    width: fit-content;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 85%;
+    align-items: center;
+    margin-right: -2vw;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    max-width: 70%;
+    overflow: auto;
+    height: 94%;
+    padding-top: 2%;
+}
+
+.foto{
+    width: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: -10vh;
+    text-align: center;
+}
+
+.img{
+    width: 500px;
+    height: 375px;
+    border-radius: 20px;
+}
+
+.receitaButton{
+    display: block;
+    width: 70%;
+    border: none;
+    background-color: #c2c2c2;
+    font-size: 20px;
+    padding: 7px 0px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.receitaButton:hover{
+    background-color: rgba(0, 255, 255, 0.274);
+    padding: 12px;
+    width: 75%;
+    font-size: 25px;
+    border: #ff0000 3px solid;
+}
+
+header > input{
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+header > button{
+    display: block;
+    width: 10%;
+    border: none;
+    background-color: #85dd89;
+    font-size: 25px;
+    padding: 10px 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#btn-traduzido{
+    margin-left: -4vw;
+}
